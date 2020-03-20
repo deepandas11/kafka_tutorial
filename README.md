@@ -4,7 +4,7 @@
 
 This exploratory notebook creates two Kafka producers and Kafka Consumers each on a single Broker.
 
-Step1: The parser fetches raw markups for individual recipes from the following URL['https://www.allrecipes.com/recipes/96/salad/'].
+Step1: The parser fetches raw markups for individual recipes from the following URL ['https://www.allrecipes.com/recipes/96/salad/']Salads.
 
 Step2: `Producer1` then logs these raw markups in the `raw_recipes` topic
 
