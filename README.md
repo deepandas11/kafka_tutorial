@@ -1,10 +1,23 @@
 # Kafka Tutorial 
 
+
+## What is Kafka?
+
+- Open Source Stream Processing Software Platform
+- Handles real time data feeds
+- Essentially a big commit log where data is stored in sequence as it happens. 
+- Core Concepts:
+  - Topics: Stream of records, can be subdivided into partitions and each record can be assigned an offset. 
+  - Producers: Logs data into the Kafka System. 
+  - Consumers: Gets subscribed to a topic and consumes the data from there
+  - Broker: An instance of the Kafka system that is responsible for the message exchange. A kafka cluster is a set of brokers.
+  - Zookeeper: Synchronization service and manages all brokers 
+
 ## Create a Simple Notification Service using Kafka
 
 This exploratory notebook creates two Kafka producers and Kafka Consumers each on a single Broker.
 
-Step1: The parser fetches raw markups for individual recipes from the following URL ['https://www.allrecipes.com/recipes/96/salad/']Salads.
+Step1: The parser fetches raw markups for individual recipes from the following URL ['https://www.allrecipes.com/recipes/96/salad/'].
 
 Step2: `Producer1` then logs these raw markups in the `raw_recipes` topic
 
